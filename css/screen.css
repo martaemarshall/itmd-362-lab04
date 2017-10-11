@@ -199,10 +199,6 @@ html {
   background-color: #D3D3D3;
 }
 
-label {
-  display: inline-block;
-}
-
 main {
   display: flex;
   flex-direction: row;
@@ -210,6 +206,7 @@ main {
 }
 
 #input-email{
+  display: inline-block;
   padding: 1.182em 0 1.182em 0;
 }
 
@@ -222,10 +219,9 @@ form {
   padding-left: 2em;
 }
 /* ===== LAYOUT STYLES ====== */
-#age-verification{
-  height: 1em;
-  width: 1em;
-  float: left;
+​#input-age-verification{
+  display: inline-block;
+  float:left;
 }
 
 #input-submit {
@@ -234,4 +230,22 @@ form {
 /* ===== MODULAR STYLES ===== */
 
 /* ===== STATE STYLES ======= */
-
+@media screen and (min-width:0px) and (max-width:576px){
+  html{
+    font-size: 1em;
+    line-height: 1.375em;
+  }
+  
+  h1{
+    font-size: 1.5em;
+  }
+  
+  main{
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  form{
+    padding: 0.541em;
+  }
+}
