@@ -200,11 +200,37 @@ html {
 }
 
 label {
-  display: block;
+  display: inline-block;
 }
 
-/* ===== LAYOUT STYLES ====== */
+main {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+}
 
+#input-email{
+  padding: 1.182em 0 1.182em 0;
+}
+
+h1 {
+  font-size: 1.875em; /* 30px / 16px */
+  line-height: 1.467em; /* 44px(2 gridlines) / 30px */
+}
+
+form {
+  padding-left: 2em;
+}
+/* ===== LAYOUT STYLES ====== */
+#age-verification{
+  height: 1em;
+  width: 1em;
+  float: left;
+}
+
+#input-submit {
+  padding-top: 1em;
+}
 /* ===== MODULAR STYLES ===== */
 
 /* ===== STATE STYLES ======= */
